@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useOrders } from '../context/OrdersContext'; // Supongo que estás usando un contexto para los pedidos
+import { useOrders } from '../context/OrdersContext';
 import CustomNavbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const Pedidos = () => {
-  const { orders } = useOrders(); // Suponiendo que tienes un contexto para obtener los pedidos
+  const { orders } = useOrders();
   const navigate = useNavigate();
 
   const handleOrderDetail = (orderId) => {

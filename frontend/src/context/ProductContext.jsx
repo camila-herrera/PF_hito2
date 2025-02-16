@@ -26,5 +26,4 @@ export const ProductosProvider = ({ children }) => {
   );
 };
 
-// Custom hook para acceder al contexto
 export const useProductos = () => useContext(ProductosContext);

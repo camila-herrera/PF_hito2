@@ -23,7 +23,6 @@ export const OrdersProvider = ({ children }) => {
     },
   ]);
 
-  // Función para cambiar el estado de un pedido
   const updateOrderStatus = (orderId, newStatus) => {
     setOrders((prevOrders) =>
       prevOrders.map((order) =>
