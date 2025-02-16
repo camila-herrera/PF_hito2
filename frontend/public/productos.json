@@ -1,0 +1,185 @@
+{
+    "productos": [
+      {
+        "id_producto": 1,
+        "nombre": "Pistola Glock 17",
+        "descripcion": "Pistola semi-automática de 9mm, confiable y precisa.",
+        "precio": 600.00,
+        "stock": 10,
+        "categoria": "Armas de fuego",
+        "imagen": "https://images.unsplash.com/photo-1578872282881-68e1c0f5f516?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8MXx8cGlzdG9sYSUyMGdsb2NrfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 2,
+        "nombre": "Chaleco Antibalas Nivel IIIA",
+        "descripcion": "Chaleco de protección contra balas, ligero y flexible.",
+        "precio": 250.00,
+        "stock": 15,
+        "categoria": "Protección personal",
+        "imagen": "https://images.unsplash.com/photo-1573226482149-bff6fe3b76d2?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Mnx8Y2hhbGVjb3xlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 3,
+        "nombre": "Municiones 9mm (Caja 50)",
+        "descripcion": "Caja de 50 cartuchos calibre 9mm para pistolas.",
+        "precio": 20.00,
+        "stock": 50,
+        "categoria": "Municiones",
+        "imagen": "https://images.unsplash.com/photo-1612565358391-f3db0e78d694?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8M3x8bXJpdHxlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 4,
+        "nombre": "Gas Pimienta 60ml",
+        "descripcion": "Spray de gas pimienta para defensa personal, 60ml.",
+        "precio": 15.00,
+        "stock": 30,
+        "categoria": "Defensa personal",
+        "imagen": "https://images.unsplash.com/photo-1617305822275-b9f6eec9e080?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Nnx8Z2FzJTIwcGltaWVudG98ZW58MHx8fHwxNjYwNzE1Mzgy&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 5,
+        "nombre": "Pistola Eléctrica Stun Gun",
+        "descripcion": "Pistola eléctrica de alta intensidad para defensa personal.",
+        "precio": 50.00,
+        "stock": 25,
+        "categoria": "Defensa personal",
+        "imagen": "https://images.unsplash.com/photo-1616577458130-9c86a90777f2?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8N3x8Z3JlZW4lMjBpbiUyMGFjdGlvbnxlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 6,
+        "nombre": "Machete de Seguridad 18\"",
+        "descripcion": "Machete de 18 pulgadas, hoja de acero inoxidable.",
+        "precio": 35.00,
+        "stock": 40,
+        "categoria": "Herramientas de seguridad",
+        "imagen": "https://images.unsplash.com/photo-1617144257248-02d3d34c9ef0?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8NXx8cGFyYW5vcmFsaXphZG98ZW58MHx8fHwxNjYwNzE1NTQz&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 7,
+        "nombre": "Funda para Pistola de Cuero",
+        "descripcion": "Funda de cuero para llevar pistolas de forma segura.",
+        "precio": 30.00,
+        "stock": 50,
+        "categoria": "Accesorios",
+        "imagen": "https://images.unsplash.com/photo-1573159052232-0dbb8b245a13?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8OXx8Zm5kYSUyMHBlb3BsZXxlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 8,
+        "nombre": "Cámara de Seguridad 1080p",
+        "descripcion": "Cámara de seguridad con resolución 1080p, visión nocturna.",
+        "precio": 120.00,
+        "stock": 15,
+        "categoria": "Seguridad electrónica",
+        "imagen": "https://images.unsplash.com/photo-1595360894641-b9ab4c11823a?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8M3x8Y2FtZXJhfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 9,
+        "nombre": "Lámpara de Seguridad LED",
+        "descripcion": "Lámpara LED con sensor de movimiento, ideal para exteriores.",
+        "precio": 25.00,
+        "stock": 35,
+        "categoria": "Seguridad exterior",
+        "imagen": "https://images.unsplash.com/photo-1607663985504-86a9efb21fd4?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8OHx8bGFtcGFyYSUyMGRlJTIwc2VndXJpZGFkfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 10,
+        "nombre": "Alarma de Seguridad para Puerta",
+        "descripcion": "Alarma para puertas con sonido de alta intensidad.",
+        "precio": 40.00,
+        "stock": 20,
+        "categoria": "Seguridad electrónica",
+        "imagen": "https://images.unsplash.com/photo-1606995323035-c17da288de7f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8MTV8fGFsYXJtYXMlMjBkZSUyMHB1ZXJ0aXxlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 11,
+        "nombre": "Escudo de Seguridad Anti-disturbios",
+        "descripcion": "Escudo protector anti-disturbios para enfrentamientos.",
+        "precio": 90.00,
+        "stock": 12,
+        "categoria": "Protección personal",
+        "imagen": "https://images.unsplash.com/photo-1571197590636-1ad0c7d6ff9f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Mnx8ZXNjdWRvJTIwZGUlMjBzZWNndXJpZG9zfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 12,
+        "nombre": "Spray Anti-Robo",
+        "descripcion": "Spray de alta concentración para disuadir robos.",
+        "precio": 10.00,
+        "stock": 40,
+        "categoria": "Defensa personal",
+        "imagen": "https://images.unsplash.com/photo-1617309985425-08c36448b96e?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8MTV8fG5hJTIwY2Fjb2h1ZWZha3x8ZW58MHx8fHwxNjYwNzE1MjAy&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 13,
+        "nombre": "Taser de Defensa Personal",
+        "descripcion": "Taser eléctrico compacto para defensa personal.",
+        "precio": 75.00,
+        "stock": 50,
+        "categoria": "Defensa personal",
+        "imagen": "https://images.unsplash.com/photo-1617222853029-097f7fdc5cc7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Nnx8dGFzZXJ8ZW58MHx8fHwxNjYwNzE1NDAw&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 14,
+        "nombre": "Binoculares de Alta Definición",
+        "descripcion": "Binoculares 10x50 con lente de alta calidad.",
+        "precio": 40.00,
+        "stock": 30,
+        "categoria": "Herramientas de observación",
+        "imagen": "https://images.unsplash.com/photo-1617146618929-178a1573adbc?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Mnx8YmluJTIwb2JzZXJ2YWNpb258ZW58MHx8fHwxNjYwNzE1NjMw&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 15,
+        "nombre": "Radio de Comunicación para Emergencias",
+        "descripcion": "Radio de comunicación de largo alcance, ideal para emergencias.",
+        "precio": 150.00,
+        "stock": 15,
+        "categoria": "Seguridad electrónica",
+        "imagen": "https://images.unsplash.com/photo-1596985097672-8e98e7a8e038?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8NXx8cmFkaW98ZW58MHx8fHwxNjYwNzE1NjQw&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 16,
+        "nombre": "Máscara de Gas Militar",
+        "descripcion": "Máscara de gas diseñada para entornos tóxicos y de guerra.",
+        "precio": 80.00,
+        "stock": 20,
+        "categoria": "Protección personal",
+        "imagen": "https://images.unsplash.com/photo-1571348234763-d2db9b15d8f7?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8M3x8bWFzY2FyYSUyMGRlJTIwZ2FzfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 17,
+        "nombre": "Rifle de Asalto M4",
+        "descripcion": "Rifle de asalto M4, ideal para seguridad avanzada.",
+        "precio": 800.00,
+        "stock": 10,
+        "categoria": "Armas de fuego",
+        "imagen": "https://images.unsplash.com/photo-1616872762730-c42f7b457bda?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8N3x8cmlmbGV8ZW58MHx8fHwxNjYwNzE1NjYx&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 18,
+        "nombre": "Hacha de Emergencia",
+        "descripcion": "Hacha de emergencia de alta resistencia para rescates.",
+        "precio": 45.00,
+        "stock": 20,
+        "categoria": "Herramientas de seguridad",
+        "imagen": "https://images.unsplash.com/photo-1613328302690-fd4403d9d8cc?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Nnx8YWhhJTIwZGUlMjBlbWVyZ2VuY2lhfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 19,
+        "nombre": "Cámara Termográfica de Seguridad",
+        "descripcion": "Cámara termográfica de alta resolución para vigilancia.",
+        "precio": 450.00,
+        "stock": 12,
+        "categoria": "Seguridad electrónica",
+        "imagen": "https://images.unsplash.com/photo-1612135734518-bc92d79c7d7d?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8OHx8Y2FtZXJlJTIwdGVybW9ncmFmaWVhfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+      },
+      {
+        "id_producto": 20,
+        "nombre": "Botellas de Agua Resistente",
+        "descripcion": "Botellas de agua para actividades extremas, resistente a golpes.",
+        "precio": 15.00,
+        "stock": 25,
+        "categoria": "Accesorios de aventura",
+        "imagen": "https://images.unsplash.com/photo-1582510181607-c441cb340e69?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1OXwwfDF8c2VhY2h8Mnx8Ym90ZWxsYXMlMjBkZSUyMGElMjBhbnZlbnR1cmF8ZW58MHx8fHwxNjYwNzE1NzA0&ixlib=rb-1.2.1&q=80&w=400"
+      }
+    ]
+  }
+  
