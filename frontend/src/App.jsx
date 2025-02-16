@@ -9,12 +9,12 @@ import Pedidos from './views/Pedidos';
 import Carrito from './views/Carrito';
 import Detail from './views/Detail';
 import Notfound from './views/Notfound';
-import { ProductosProvider } from './context/ProductosContext';
+import { ProductosProvider } from './context/ProductContext';
 import { useAuth } from './context/AuthContext';
 
-function ProtectedRoute({ children }) {
-  const { isAuthenticated } = useAuth();
-  if (!isAuthenticated) {
+function ProtectedRoute({ children, allowedRoles }) {
+  const { isAuthenticated, userRole } = useAuth();
+  if (!isAuthenticated || !allowedRoles.includes(userRole)) {
     return <Navigate to="/login" />;
   }
   return children;
@@ -25,12 +25,12 @@ function App() {
     <ProductosProvider>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute allowedRoles={['user']}><Profile /></ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
-        <Route path="/pedidos" element={<ProtectedRoute><Pedidos /></ProtectedRoute>} />
-        <Route path="/carrito" element={<ProtectedRoute><Carrito /></ProtectedRoute>} />
+        <Route path="/checkout" element={<ProtectedRoute allowedRoles={['user']}><Checkout /></ProtectedRoute>} />
+        <Route path="/pedidos" element={<ProtectedRoute allowedRoles={['cliente', 'admin']}><Pedidos /></ProtectedRoute>} />
+        <Route path="/carrito" element={<ProtectedRoute allowedRoles={['user']}><Carrito /></ProtectedRoute>} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
@@ -39,5 +39,3 @@ function App() {
 }
 
 export default App;
-
-

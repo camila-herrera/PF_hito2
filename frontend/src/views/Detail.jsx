@@ -1,64 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import { Card, Button, Row, Col, Container } from 'react-bootstrap';
-import { useParams } from 'react-router-dom'; // Si vas a obtener un ID del producto de la URL
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { useProductos } from '../context/ProductContext';
+import { useCart } from '../context/CartContext';
 
 const Detail = () => {
-  const { id } = useParams(); // Para obtener el ID de la URL si es necesario
-  const [product, setProduct] = useState(null);
+  const { id } = useParams();
+  const { productos, loading } = useProductos();
+  const { addToCart } = useCart();
+  const product = productos.find((p) => p.id_producto.toString() === id);
 
-  // Simulación de obtener los detalles de un producto (por ejemplo, desde una API o archivo local)
-  useEffect(() => {
-    // Aquí podrías hacer una llamada a la API usando el ID
-    // Esto es solo un ejemplo estático:
-    const fetchProduct = async () => {
-      // Suponiendo que obtienes un producto con el ID
-      // Esto es solo un mock-up de ejemplo
-      const data = {
-        id: id,
-        name: 'Chaqueta de Invierno',
-        description: 'Una chaqueta térmica ideal para el frío extremo.',
-        price: '$99.99',
-        image: '/path/to/image.jpg',
-        extraImages: ['/path/to/extra1.jpg', '/path/to/extra2.jpg'],
-      };
-      setProduct(data);
-    };
+  if (loading) return <div>Loading...</div>;
+  if (!product) return <div>Producto no encontrado</div>;
 
-    fetchProduct();
-  }, [id]);
-
-  if (!product) {
-    return <div>Loading...</div>; // Puedes mostrar un loading mientras cargas los datos
-  }
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
 
   return (
-    <Container className="my-5">
-      <Row>
-        <Col md={6}>
-          <Card>
-            <Card.Img variant="top" src={product.image} alt={product.name} />
-            <Card.Body>
-              <Card.Title>{product.name}</Card.Title>
-              <Card.Text>{product.description}</Card.Text>
-              <Card.Text><strong>Price:</strong> {product.price}</Card.Text>
-              <Button variant="primary">Add to Cart</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6}>
-          {/* Aquí puedes añadir una galería de imágenes adicionales si las tienes */}
-          <h5>Additional Images</h5>
-          <Row>
-            {product.extraImages.map((img, index) => (
-              <Col key={index} sm={4}>
-                <img src={img} alt={`Extra ${index + 1}`} className="img-fluid mb-2" />
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+    <div className="min-h-screen flex flex-col bg-[#4C5425] text-white">
+      <Navbar />
+      <div className="flex flex-1 items-center justify-center p-4">
+        <div className="bg-white text-black rounded-lg shadow-lg p-6 max-w-md w-full text-center">
+          <img src={product.imagen} alt={product.nombre} className="w-full h-64 object-cover mb-4 rounded" />
+          <h1 className="text-2xl font-bold mb-2">{product.nombre}</h1>
+          <p className="mb-2">{product.descripcion}</p>
+          <p className="mb-4 font-semibold text-lg">${product.precio}</p>
+          <button onClick={handleAddToCart} className="bg-[#E5B129] text-black px-4 py-2 rounded hover:bg-yellow-600 transition">
+            Agregar al Carrito
+          </button>
+        </div>
+      </div>
+      <Footer />
+    </div>
   );
 };
 
 export default Detail;
+
+
